@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+    /* This removes any type of scrolling, even on touch screens */
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Fixing the position of the canvas gets rid of the scroll bar */
+    outline: none; 
+    /* Outline fixes the blue line that appears on chrom browsers */
+}
+
