@@ -51,10 +51,13 @@ const scene = new THREE.Scene()
 /**
  * Object
  */
-const geometry = new THREE.BoxGeometry(1, 1, 1)
-const material = new THREE.MeshBasicMaterial({ map: colorTexture })
-const mesh = new THREE.Mesh(geometry, material)
-scene.add(mesh)
+const material = new THREE.MeshBasicMaterial()
+
+const sphere = new THREE.Mesh(
+    new THREE.SphereGeometry(0.5, 16, 16), // Geometry parameter (radius, width segments, height segments)
+    material
+)
+scene.add(sphere)
 
 /**
  * Sizes
